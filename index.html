@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Input Processing</title>
+    <title>Simple Input Processing with Flask</title>
 </head>
 <body>
     <h1>Enter your text:</h1>
-    <form action="process.py" method="post">
+    <form action="/" method="post">
         <input type="text" name="user_input" placeholder="Enter something here">
         <button type="submit">Process</button>
     </form>
     <br>
-    <p id="output"></p>
+    <p>Processed Text: {{ output }}</p>
 </body>
 </html>

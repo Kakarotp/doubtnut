@@ -6,7 +6,7 @@ def process_text(text):
     # Replace this with your actual processing logic
     return f"You entered: {text.upper()}"
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/result", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
         user_input = request.form["user_input"]
